@@ -1,0 +1,38 @@
+{
+	"title": "Service Offering",
+	"description": "Service Offering Object",
+	"type": "object",
+	"required": [
+		"id",
+		"name",
+		"ems_ref"
+	],
+	"properties" : {
+		"id": {
+			"type": "string",
+			"title": "ID",
+			"readOnly": true,
+			"example": "1"
+		},
+		"name": {
+			"type" : "string",
+			"title" : "Name",
+			"example": "Sample Service"
+		},
+		"description": {
+			"type" : "string",
+			"title": "Description",
+			"example": "This sample service is a simple service to ..."
+		},
+		"ems_ref" : {
+			"type": "string",
+			"title": "External Vendor Specific ID",
+			"readOnly" : true
+		},
+		"extra" : {
+			"title" : "Extra",
+			"example" : "Extra information about this object in JSON format",
+			"type" : "object"
+		}
+	}
+}
